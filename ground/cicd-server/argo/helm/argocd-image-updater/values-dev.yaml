@@ -1,9 +1,8 @@
 config:
   argocd:
-    serverAddress: "https://argo-cd-argocd-server"
+    serverAddress: "https://192.168.0.195:30002"
 
   registries:
-    - name: Docker Hub
-      api_url: https://registry-1.docker.io
-      #credentials: env:DOCKER_HUB_CREDS=username:passowrd
-
+      - name: GHCR
+        api_url: https://ghcr.io
+        credentials: "username:trueriez password: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"
