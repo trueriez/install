@@ -7,4 +7,4 @@ config:
     - name: GitHub Container Registry
       api_url: https://ghcr.io
       prefix: ghcr.io
-      credentials: env:DOCKER_HUB_CREDS=username:passowrd
+      credentials: env:DOCKER_HUB_CREDS
