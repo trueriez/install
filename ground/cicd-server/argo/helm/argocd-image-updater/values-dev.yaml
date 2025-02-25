@@ -1,10 +1,18 @@
+#config:
+  #enabled: true
+  #argocd:
+   # serverAddress: "https://argo-cd-argocd-server" 
+
+  #registries:
+    #- name: GitHub Container Registry
+      #api_url: https://ghcr.io
+      #prefix: ghcr.io
+      #credentials: env:DOCKER_HUB_CREDS=username:passowrd
+
 config:
-  enabled: true
   argocd:
-    serverAddress: "https://argo-cd-argocd-server" 
+    serverAddress: "https://argo-cd-argocd-server"
 
   registries:
-    - name: GitHub Container Registry
-      api_url: https://ghcr.io
-      prefix: ghcr.io
-      credentials: env:DOCKER_HUB_CREDS=username:passowrd
+    - name: Docker Hub
+      api_url: https://registry-1.docker.io
