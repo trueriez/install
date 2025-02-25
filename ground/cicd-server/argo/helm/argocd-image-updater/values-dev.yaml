@@ -3,7 +3,7 @@ config:
     serverAddress: "https://argo-cd-argocd-server" 
 
   registries:
-      - name: GitHub Container Registry
-        api_url: https://ghcr.io
-        prefix: ghcr.io
-        credentials: env:GHCR_CREDS=username:passowrd
+    - name: GitHub Container Registry
+      api_url: https://ghcr.io
+      prefix: ghcr.io
+      credentials: env:GHCR_CREDS
