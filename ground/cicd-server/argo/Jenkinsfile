@@ -46,7 +46,7 @@ pipeline {
                                 // https://argocd-image-updater.readthedocs.io/en/stable/basics/update-methods/
                                 withCredentials([usernamePassword(credentialsId: 'github-container-credentials', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
                                     // HELM_DEPLOY_COMMAND += " --set config.registries[0].credentials=env:DOCKER_HUB_CREDS="+ '${USERNAME}' + ":" + '${PASSWORD}'
-                                    HELM_DEPLOY_COMMAND += " --set config.registries[0].credentials=env:DOCKER_HUB_CREDS=${USERNAME}:${PASSWORD}"
+                                    HELM_DEPLOY_COMMAND += " --set config.registries[0].credentials=env:GHCR_CREDS=${USERNAME}:${PASSWORD}"
 
                                 }
                             }
